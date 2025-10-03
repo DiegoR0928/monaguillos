@@ -1,1 +1,153 @@
-<h1>Hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Cósmico | Agencia Creativa Digital</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- RESET Y VARIABLES GLOBALES --- */
+        :root {
+            --color-fondo: #0a0f18;
+            --color-primario: #141a2c;
+            --color-acento: #00f5ff;
+            --color-acento-hover: #9effff;
+            --color-texto-principal: #e0e0e0;
+            --color-texto-secundario: #a0a0a0;
+            --fuente-titulos: 'Orbitron', sans-serif;
+            --fuente-cuerpo: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto-principal);
+            font-family: var(--fuente-cuerpo);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* --- ESTILOS GENERALES Y CONTENEDORES --- */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--fuente-titulos);
+            color: #fff;
+            text-shadow: 0 0 10px var(--color-acento);
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 60px;
+            text-transform: uppercase;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--color-acento);
+            color: var(--color-fondo);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            border: 2px solid var(--color-acento);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: var(--color-acento);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 245, 255, 0.2);
+        }
+
+        /* --- HEADER Y NAVEGACIÓN --- */
+        .header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(10, 15, 24, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px 0;
+            transition: padding 0.3s ease;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--fuente-titulos);
+            font-size: 1.8rem;
+            color: #fff;
+            text-decoration: none;
+        }
+        .logo span { color: var(--color-acento); }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: var(--color-texto-principal);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-acento);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #fff;
+        }
+        
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+
+        /* --- SECCIÓN HERO --- */
+        #
